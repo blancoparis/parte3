@@ -1,7 +1,7 @@
 <%@include file="/WEB-INF/paginas/core/cabecera.jsp"%>
 <html ng-app="jacksonApp">
 <head>
-	<title>Inicio</title>
+	<title><spring:message code="inicio.title"/></title>
 	<jsp:include page="/WEB-INF/paginas/core/head.jsp"></jsp:include>
 	<script type="text/javascript"	src="${contexto}recursos/aplicacion/js/inicio/app.js"></script>
 </head>
