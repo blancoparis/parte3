@@ -3,7 +3,7 @@
 	 * Configuraciones generales del proyecto
 	 */
 	appCabeceraControlador.constant("configuracionGeneral", {
-		ctx : 'http://localhost:8080/parte2/'
+		ctx : 'http://localhost:8080/parte3/'
 	});
 	/**
 	 * El controlador encargado de cargar los datos de la cabecera
@@ -34,7 +34,13 @@
 						opcion : 'jackson',
 						url : conf.ctx + 'jackson',
 						activo : false
-					} ]
+					} , {
+						id : 3,
+						opcion : 'listado',
+						url : conf.ctx + 'listado',
+						activo : false
+					} 
+					]
 				};
 				angular.forEach($scope.menu.opciones, function(value, key) {
 					if (value.id == configuracionPagina.id) {
